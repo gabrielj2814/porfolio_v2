@@ -1,0 +1,39 @@
+@import "./styles/colors";
+
+*{
+    box-sizing: border-box;
+    color:white;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-pagina{
+    background-color: $colorFondo;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor{
+    max-width: 1024px;
+}
+
+header{
+    background-color: aqua;
+    min-height: 10px;
+}
+
+main{
+    background-color: red;
+    min-height: 200px;
+}
+
+.footerPage{
+    width: 100%;
+    min-height: 80px;
+    background-color: $colorContenedores;
+}
