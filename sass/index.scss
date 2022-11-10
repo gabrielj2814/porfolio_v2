@@ -36,4 +36,14 @@ main{
     width: 100%;
     min-height: 80px;
     background-color: $colorContenedores;
+
+    .link-icon-footer{
+        display: inline-block;
+        margin-right: 10px;
+
+        svg{
+            width: 25px;
+            height: 25px;
+        }
+    }
 }
