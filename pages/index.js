@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import FooterPageComponent from '../components/footerPageComponent'
+import HeaderComponent from '../components/headerComponent'
 
 export default function Home() {
   return (
@@ -7,9 +8,7 @@ export default function Home() {
         <Head>
           <title>Inicio</title>
         </Head>
-        <header>
-
-        </header>
+        <HeaderComponent/>
         <main>
 
         </main>
