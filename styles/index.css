@@ -66,8 +66,6 @@ header .menu-movil .contenedor-menu-items-movil {
   justify-content: space-between;
 }
 header .menu-movil .contenedor-menu-items-movil .contenedor-x-menu-movil {
-  left: 20px;
-  top: 20px;
   cursor: pointer;
 }
 header .menu-movil .contenedor-menu-items-movil .contenedor-x-menu-movil svg {
@@ -77,6 +75,36 @@ header .menu-movil .contenedor-menu-items-movil .contenedor-x-menu-movil svg {
 header .menu-movil .contenedor-menu-items-movil .redes-sociales-menu svg {
   width: 40px;
   height: 40px;
+}
+header .menu-movil h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+header .menu-movil .lista-items-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .menu-movil .lista-items-menu li {
+  width: 30%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+header .menu-movil .lista-items-menu li .link-menu-movil svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+}
+header .menu-movil .lista-items-menu li a {
+  text-decoration: none;
+  color: #FFF;
 }
 
 main {
