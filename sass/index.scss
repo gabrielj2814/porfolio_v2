@@ -70,8 +70,12 @@ header{
             .contenedor-x-menu-movil{
                 cursor: pointer;
                 svg{
+                    margin-left: 10px;
                     width: 50px;
                     height: 50px;
+                    &:hover{
+                        stroke:$resaltar;
+                    }
                 }
             }
 
@@ -79,6 +83,9 @@ header{
                 svg{
                     width: 40px;
                     height: 40px;
+                    &:hover{
+                        fill:$resaltar;
+                    }
                 }
             }
             
@@ -100,7 +107,10 @@ header{
                 width: 30%;
                 margin-bottom: 30px;
                 text-align: center;
-                .link-menu-movil{
+                a{
+                    text-decoration: none;
+                    color: #FFF;
+                    transition: transform .5s ease-out;
                     svg{
                         display: block;
                         margin-left: auto;
@@ -108,10 +118,12 @@ header{
                         width: 40px;
                         height: 40px;
                     }
-                }
-                a{
-                    text-decoration: none;
-                    color: #FFF;
+                    &:hover{
+                        color:$resaltar;
+                    }
+                    &:hover svg{
+                        stroke:$resaltar;
+                    }
                 }
             }
         }

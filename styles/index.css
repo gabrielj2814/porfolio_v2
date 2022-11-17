@@ -69,12 +69,19 @@ header .menu-movil .contenedor-menu-items-movil .contenedor-x-menu-movil {
   cursor: pointer;
 }
 header .menu-movil .contenedor-menu-items-movil .contenedor-x-menu-movil svg {
+  margin-left: 10px;
   width: 50px;
   height: 50px;
+}
+header .menu-movil .contenedor-menu-items-movil .contenedor-x-menu-movil svg:hover {
+  stroke: #FB5B5B;
 }
 header .menu-movil .contenedor-menu-items-movil .redes-sociales-menu svg {
   width: 40px;
   height: 40px;
+}
+header .menu-movil .contenedor-menu-items-movil .redes-sociales-menu svg:hover {
+  fill: #FB5B5B;
 }
 header .menu-movil h3 {
   text-align: center;
@@ -95,16 +102,23 @@ header .menu-movil .lista-items-menu li {
   margin-bottom: 30px;
   text-align: center;
 }
-header .menu-movil .lista-items-menu li .link-menu-movil svg {
+header .menu-movil .lista-items-menu li a {
+  text-decoration: none;
+  color: #FFF;
+  transition: transform 0.5s ease-out;
+}
+header .menu-movil .lista-items-menu li a svg {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40px;
   height: 40px;
 }
-header .menu-movil .lista-items-menu li a {
-  text-decoration: none;
-  color: #FFF;
+header .menu-movil .lista-items-menu li a:hover {
+  color: #FB5B5B;
+}
+header .menu-movil .lista-items-menu li a:hover svg {
+  stroke: #FB5B5B;
 }
 
 main {
