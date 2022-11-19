@@ -22,12 +22,18 @@ html,body{
     max-width: 1024px;
 }
 
-.ocultar{
-    display: none;
+.mostar-menu-movil{
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: scale(1) !important;
+}
+
+.mostar-menu-desktop{
+    opacity: 1 !important;
+    pointer-events: auto !important;
 }
 
 header{
-    // background-color: aqua;
     position: relative;
     min-height: 10px;
     .item-menu{
@@ -41,10 +47,77 @@ header{
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        position: relative;
         svg{
             stroke-width: 2px;
             width: 30px;
             height: 30px;
+        }
+    }
+
+    .menu-desktop{
+        background-color: $colorContenedores;
+        width: auto;
+        height: 80px;
+        border-radius: 10px;
+        position: absolute;
+        top: 16px;
+        left: 10px;
+        z-index: 0;
+        opacity: 1;
+        padding-right: 20px;
+        padding-left: 20px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .5s ease-out;
+        .contenedor-menu-items-desktop{
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            .contenedor-x-menu-desktop{
+                cursor: pointer;
+                svg{
+                    width: 50px;
+                    height: 50px;
+                    &:hover{
+                        stroke:$resaltar;
+                    }
+                }
+            }
+            .lista-items-menu{
+                width: auto;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                li{
+                    margin-left: 50px;
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        color: #FFF;
+                        transition: transform .5s ease-out;
+                        svg{
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 30px;
+                            height: 30px;
+                        }
+                        &:hover{
+                            color:$resaltar;
+                        }
+                        &:hover svg{
+                            stroke:$resaltar;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -57,6 +130,10 @@ header{
         top: 0;
         left: 0;
         padding: 40px;
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(.9);
+        transition: opacity .5s ease-out,transform .5s ease-out;
 
         .contenedor-menu-items-movil{
             background-color: $colorFondo;
@@ -128,6 +205,8 @@ header{
             }
         }
     }
+
+   
 }
 
 main{

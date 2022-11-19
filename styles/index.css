@@ -20,8 +20,15 @@ html, body {
   max-width: 1024px;
 }
 
-.ocultar {
-  display: none;
+.mostar-menu-movil {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: scale(1) !important;
+}
+
+.mostar-menu-desktop {
+  opacity: 1 !important;
+  pointer-events: auto !important;
 }
 
 header {
@@ -39,11 +46,77 @@ header .item-menu {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 header .item-menu svg {
   stroke-width: 2px;
   width: 30px;
   height: 30px;
+}
+header .menu-desktop {
+  background-color: #242333;
+  width: auto;
+  height: 80px;
+  border-radius: 10px;
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  z-index: 0;
+  opacity: 1;
+  padding-right: 20px;
+  padding-left: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-out;
+}
+header .menu-desktop .contenedor-menu-items-desktop {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+header .menu-desktop .contenedor-menu-items-desktop .contenedor-x-menu-desktop {
+  cursor: pointer;
+}
+header .menu-desktop .contenedor-menu-items-desktop .contenedor-x-menu-desktop svg {
+  width: 50px;
+  height: 50px;
+}
+header .menu-desktop .contenedor-menu-items-desktop .contenedor-x-menu-desktop svg:hover {
+  stroke: #FB5B5B;
+}
+header .menu-desktop .contenedor-menu-items-desktop .lista-items-menu {
+  width: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+header .menu-desktop .contenedor-menu-items-desktop .lista-items-menu li {
+  margin-left: 50px;
+  text-align: center;
+}
+header .menu-desktop .contenedor-menu-items-desktop .lista-items-menu li a {
+  text-decoration: none;
+  color: #FFF;
+  transition: transform 0.5s ease-out;
+}
+header .menu-desktop .contenedor-menu-items-desktop .lista-items-menu li a svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30px;
+  height: 30px;
+}
+header .menu-desktop .contenedor-menu-items-desktop .lista-items-menu li a:hover {
+  color: #FB5B5B;
+}
+header .menu-desktop .contenedor-menu-items-desktop .lista-items-menu li a:hover svg {
+  stroke: #FB5B5B;
 }
 header .menu-movil {
   background-color: rgba(42, 42, 54, 0.7450980392);
@@ -54,6 +127,10 @@ header .menu-movil {
   top: 0;
   left: 0;
   padding: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 header .menu-movil .contenedor-menu-items-movil {
   background-color: #1A1A24;
