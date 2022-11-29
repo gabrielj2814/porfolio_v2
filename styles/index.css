@@ -26,11 +26,6 @@ html, body {
   transform: scale(1) !important;
 }
 
-.mostar-menu-desktop {
-  opacity: 1 !important;
-  pointer-events: auto !important;
-}
-
 header {
   position: relative;
   min-height: 10px;
@@ -178,9 +173,33 @@ header .menu-movil .lista-items-menu li a:hover svg {
   stroke: #FB5B5B;
 }
 
-main {
-  background-color: red;
+.contenido-home {
   min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contenido-home .seccion-bienvenida {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.contenido-home .seccion-bienvenida .imagen-perfil-home {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  border: 5px solid #FB5B5B;
+}
+.contenido-home .seccion-bienvenida p {
+  width: 450px;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  letter-spacing: 2px;
+}
+.contenido-home .sobre-mi-home {
+  padding: 1.5rem;
+  word-break: break-all;
 }
 
 .footerPage {

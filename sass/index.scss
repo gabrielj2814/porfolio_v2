@@ -3,6 +3,7 @@
 *{
     box-sizing: border-box;
     color:white;
+    // border: 1px solid red;
 }
 
 html,body{
@@ -26,11 +27,6 @@ html,body{
     opacity: 1 !important;
     pointer-events: auto !important;
     transform: scale(1) !important;
-}
-
-.mostar-menu-desktop{
-    opacity: 1 !important;
-    pointer-events: auto !important;
 }
 
 header{
@@ -189,10 +185,38 @@ header{
    
 }
 
-main{
-    background-color: red;
+.contenido-home{
     min-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    // word-break: break-all;
+    .seccion-bienvenida{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        .imagen-perfil-home{
+            display: block;
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            border: 5px solid $resaltar;
+        }
+
+        p{
+            width: 450px;
+            font-size: 1.5rem;
+            padding: 1.5rem;
+            letter-spacing: 2px;
+        }
+    }
+    .sobre-mi-home{
+        padding: 1.5rem;
+        word-break:break-all;
+    }
 }
+
+
 
 .footerPage{
     width: 100%;
