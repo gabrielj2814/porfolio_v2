@@ -55,19 +55,9 @@ header .item-menu svg {
 }
 header .menu-desktop {
   background-color: #242333;
-  width: auto;
+  width: 100%;
   height: 80px;
   border-radius: 10px;
-  position: absolute;
-  top: 16px;
-  left: 10px;
-  z-index: 0;
-  opacity: 1;
-  padding-right: 20px;
-  padding-left: 20px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease-out;
 }
 header .menu-desktop .contenedor-menu-items-desktop {
   height: 100%;
@@ -76,18 +66,8 @@ header .menu-desktop .contenedor-menu-items-desktop {
   flex-direction: row;
   align-items: center;
 }
-header .menu-desktop .contenedor-menu-items-desktop .contenedor-x-menu-desktop {
-  cursor: pointer;
-}
-header .menu-desktop .contenedor-menu-items-desktop .contenedor-x-menu-desktop svg {
-  width: 50px;
-  height: 50px;
-}
-header .menu-desktop .contenedor-menu-items-desktop .contenedor-x-menu-desktop svg:hover {
-  stroke: #FB5B5B;
-}
 header .menu-desktop .contenedor-menu-items-desktop .lista-items-menu {
-  width: auto;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
